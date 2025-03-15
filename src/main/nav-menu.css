@@ -1,0 +1,41 @@
+@import url('../colors/colors.css');    
+
+.sidebar-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 2rem 1rem 0 1rem;
+    align-items: center;
+
+    background: rgba(240, 196, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+}
+
+.sidebar-container button {
+    color: var(--text-white);
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    background: rgba(118, 0, 158, 0.41);
+    border-radius: 16px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+
+    transition: transform 0.1s ease, box-shadow 2s ease;
+}
+
+.sidebar-container button:active {
+    transform: scale(0.75); 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 4px 0px, rgba(60, 64, 67, 0.15) 0px 2px 5px 1px;
+}
+
+.sidebar-container button:hover {
+    transform: scale(1.05);
+}

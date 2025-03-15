@@ -1,0 +1,30 @@
+@import url('../colors/colors.css');
+
+.welcome-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light-pink);
+}
+
+.welcome-container h1 {
+    font-size: 4rem;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 0; 
+    animation: typing 5s steps(50) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 100%; 
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

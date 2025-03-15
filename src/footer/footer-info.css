@@ -1,0 +1,10 @@
+@import url('../colors/colors.css');
+
+.footer-info-container {
+    bottom: 0;
+    padding: 2rem;
+    background-color: var(--dark-violet);
+    color: var(--text-light-pink);
+    text-align: center;
+    width: 100%;
+}

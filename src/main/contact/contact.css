@@ -1,0 +1,51 @@
+@import url('../../colors/colors.css');
+
+.contact-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-light-pink)
+}
+
+.social-media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.social-card-container {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--text-white);
+
+    background: rgba(240, 196, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card-container:hover {
+    transform: translateY(-6px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.social-card-icon {
+    font-size: 10rem;
+    color: var(--text-black);
+}
+
+.social-card-link {
+    font-size: 1.5rem;
+    color: var(--text-white);
+    text-decoration: none;
+}
