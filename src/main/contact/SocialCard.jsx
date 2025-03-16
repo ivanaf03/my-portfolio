@@ -5,7 +5,7 @@ const SocialCard = ({ icon, link, name, userName }) => {
     <a href={link} className="social-card-container">
         <p className="social-card-icon">{icon}</p>
         <p className="social-card-link">{name}</p>
-        <p>{userName}</p>
+        <p className="social-card-name">{userName}</p>
     </a>
   );
 }
