@@ -1,21 +1,12 @@
-## My personal portfolio
+# React + Vite
 
-This is my personal portfolio website. You can visit it [here](https://ivanaf03.github.io/my-portfolio).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### How to deploy a React app to GitHub Pages
+Currently, two official plugins are available:
 
-1. Create a new repository on GitHub.
-2. Clone the repository to your local machine.
-3. Run `npm install` to install the necessary dependencies.
-4. Run `npm install gh-pages --save-dev` to install the `gh-pages` package.
-5. Add to package.json the following script:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```json
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-```
+## Expanding the ESLint configuration
 
-6. Add, commit, and push the changes to the repository.
-7. Run `npm run deploy` to deploy the app to GitHub Pages.
-7. Go to the repository settings and enable GitHub Pages.
-8. Go to the repository's GitHub Pages URL and you should see your portfolio.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

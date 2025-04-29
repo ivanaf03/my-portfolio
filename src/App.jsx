@@ -1,48 +1,38 @@
 import React from "react";
-import "./app.css";
-import NameCard from "./header/NameCard";
-import Welcome from "./header/Welcome";
-import SideBarMenu from "./main/SideBarMenu";
-import FooterInfo from "./footer/FooterInfo";
-import AboutMe from "./main/about-me/AboutMe";
-import Skills from "./main/skills/Skills";
-import Projects from "./main/projects/Projects";
-import Contact from "./main/contact/Contact";
+
+import ScrollingSmoothyDiv from "./components/UI/ScrollingSmoothyDiv";
+import Header from "./components/page-components/Header";
+import AboutMe from "./components/page-components/AboutMe";
+import Projects from "./components/page-components/Projects";
+import Skills from "./components/page-components/Skills";
+import Experience from "./components/page-components/Experience";
+import Contact from "./components/page-components/Contact";
+import Footer from "./components/page-components/Footer";
 
 const App = () => {
-
-  const [selected, setSelected] = React.useState("about-me");
-
-  const renderContent = () => {
-    switch (selected) {
-      case "about-me":
-        return <AboutMe />;
-      case "skills":
-        return <Skills />;
-      case "projects":
-        return <Projects />;
-      case "contact":
-        return <Contact />;
-      default:
-        return <AboutMe />;
-    }
-  };
-
   return (
-    <div className="app-container">
-      <div className="header-container">
-        <Welcome/>
-        <NameCard/>
-      </div>
-      <div className="main-container">
-        <SideBarMenu setSelected={setSelected}/>
-        {renderContent()}
-      </div>
-      <div className="footer-container">
-        <FooterInfo/>
-      </div>
-    </div>
+    <>
+      <ScrollingSmoothyDiv>
+        <Header />
+      </ScrollingSmoothyDiv>
+      <ScrollingSmoothyDiv>
+        <AboutMe />
+      </ScrollingSmoothyDiv>
+      <ScrollingSmoothyDiv>
+        <Projects />
+      </ScrollingSmoothyDiv>
+      <ScrollingSmoothyDiv>
+        <Experience />
+      </ScrollingSmoothyDiv>
+      <ScrollingSmoothyDiv>
+        <Skills />
+      </ScrollingSmoothyDiv>
+      <ScrollingSmoothyDiv>
+        <Contact />
+      </ScrollingSmoothyDiv>
+      <Footer/>
+    </>
   );
-}
+};
 
 export default App;

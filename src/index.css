@@ -1,8 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: "Acme", sans-serif;
-    font-weight: bolder;
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Poetsen+One&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-eerie-black: #252525;
+  --color-onyx: #2C2C2C;
+  --font-family-primary: "Poetsen One", sans-serif;
+  --font-family-secondary: "National Park", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: var(--color-eerie-black);
+  font-family: var(--font-family-primary);
+  font-optical-sizing: auto;
+  color: white;
+  cursor: url("cursor.png"), auto;
 }
