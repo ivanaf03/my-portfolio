@@ -5,6 +5,7 @@ import Main from "../UI/Main";
 
 import ezcow from "../../assets/ezcow.png";
 import portfolio from "../../assets/portfolio.png";
+import pokedex from "../../assets/pokedex.png";
 
 const Projects = () => {
   const [showInfo, setShowInfo] = React.useState("EZCow");
@@ -25,6 +26,11 @@ const Projects = () => {
           <li>
             <NavBarButton onClick={() => handleClick("Portfolio")}>
               My portfolio
+            </NavBarButton>
+          </li>
+          <li>
+            <NavBarButton onClick={() => handleClick("Pokedex")}>
+              Unova Pokedex
             </NavBarButton>
           </li>
         </ul>
@@ -48,6 +54,15 @@ const Projects = () => {
             It allowed me to learn how to manage the viewport with custom hooks, 
             create a responsive and visually appealing website, and further develop my design abilities."
             image={portfolio}
+          />
+        )}
+        {showInfo === "Pokedex" && (
+          <ProjectCard
+            title="Unova Pokedex"
+            description="A responsive Unova Pokedex app built in React and TailwindCSS. 
+            It was made to help me learn how the infinite scroll works and how to implement it in a React project.
+            Pokemon cards fetch data from PokeAPI and are displayed in a grid layout."
+            image={pokedex}
           />
         )}
       </section>

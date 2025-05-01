@@ -21,7 +21,7 @@ const Experience = () => {
         {experience === "university" && (
           <ExperienceCard
             title="University of A Coruña"
-            description="Bachelor's degree in Computer Engineering with a specialization in Software Engineering. I learned the fundamentals of Spring Boot and React, specialized in agile methodologies, and gained experience with design patterns and software architectures. I developed my Final Degree Project, EZCow, using React Native and Expo."
+            description="Bachelor's degree in Computer Engineering with a specialization in Software Engineering. I learnt the fundamentals of Spring Boot and React, specialized in agile methodologies, and gained experience with design patterns and software architectures. I developed my Final Degree Project, EZCow, using React Native and Expo."
             initialDate="09/2021"
             endDate="05/2025"
           />
